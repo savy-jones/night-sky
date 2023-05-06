@@ -1,5 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
+  color: white;
   background: #11101d;
 }
 .container {
@@ -9,12 +10,22 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-gap: 60px;
+}
+
+.section-intro {
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-intro img {
+  max-width: 100%;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 header {
@@ -62,6 +73,35 @@ header a {
   display: inline-block;
   margin-top: 32px;
 }
+
+main {
+  margin: 20px;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  opacity: 0.3;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  margin: 0;
+}
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.5;
+}
+
+footer .grid {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 footer {
   color: white;
   background-image: linear-gradient(
@@ -112,5 +152,12 @@ footer li {
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
   }
 }
