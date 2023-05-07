@@ -160,6 +160,12 @@ main p {
   line-height: 24px;
   opacity: 0.5;
 }
+.video {
+  margin: 0 auto;
+  margin-top: 30px;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
 
 footer {
   color: white;
